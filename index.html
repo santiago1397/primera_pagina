@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First html</title>
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="index.html">Lo<span>Go</span></a>
+
+                <image id="mobile-cta"  class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit"  class="mobile-menu-exit" src="images/exit.svg" alt="Navigation">
+                    <ul class= "primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+
+                    <ul class= "secondary-nav">
+                        <li><a href="#">Contact</a></li>
+                        <li class="go-premiun-cta"><a href="#">Premium</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">its Nitty &amp; gritty</p>
+                    <h1>Your company slogan</h1>
+
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Take a look</a>
+                        <a href="#" class="watch-video-cta">
+                            <img src="images/watch.svg" alt="Watch Video">Watch Video
+                        </a>
+                    </div>
+                </div>
+                <img src="images/illustration.svg" alt="Illustration">
+            </div>
+
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Unlimited Tasks</li>
+                    <li>SMS Task Reminders</li>
+                    <li>Confetti Explosions upon Task Completions</li>
+                    <li>Social Media Announcements</li>
+                    <li>Real Time Collaboration</li>
+                    <li>Other awesome features</li>
+                </ul>
+    
+                <img src="https://assets.codepen.io/2621168/holding-phone.jpg" alt="Man holding phone">
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="https://assets.codepen.io/2621168/person.jpg" alt="Person">
+    
+                        <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                        <cite>- Jane Doe</cite>
+                    </li>
+                    <li>
+                        <img src="https://assets.codepen.io/2621168/person.jpg" alt="Person">
+    
+                        <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                        <cite>- Jane Doe</cite>
+                    </li>
+                    <li>
+                        <img src="https://assets.codepen.io/2621168/person.jpg" alt="Person">
+    
+                        <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                        <cite>- Jane Doe</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+
+                    <h1>Contact</h1>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="name" id="name" name="name" placeholder="yourname">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </form>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </div>
+
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.952325787964!2d-62.71670607848492!3d8.305167242452528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbfa36bc75d3db%3A0xd5ee5aa5a48d30ba!2sVilla%20Colombia%2C%20Ciudad%20Guayana%208050%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sve!4v1616475295010!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')  //hay varios nav en el css por eso se usa query selector
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    
+    </script>
+    
+</html>

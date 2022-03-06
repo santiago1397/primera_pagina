@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap");
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.8em;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .container .left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+  letter-spacing: .3em;
+}
+
+.hero .container .left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.hero .container .left-col .hero-cta .primary-cta {
+  text-decoration: none;
+  background: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: .6em 1.3em;
+  font-size: 1.3em;
+  border-radius: 5em;
+  display: inline-block;
+  margin-top: -1em;
+}
+
+.hero .container .left-col .hero-cta .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+}
+
+.hero .container .left-col .hero-cta .watch-video-cta img {
+  margin-right: .5em;
+}
+
+.features-section {
+  background: #20272e;
+  color: white;
+}
+
+.features-section img {
+  display: none;
+}
+
+ul.features-list {
+  margin: 0;
+  padding: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.features-list li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://assets.codepen.io/2621168/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.testimonials-section {
+  background: var(--primary-color);
+}
+
+.testimonials-section li {
+  background-color: #006bd6;
+  text-align: center;
+  color: white;
+  margin: 0 auto 5em auto;
+  padding: 2em 1em;
+  border-radius: 1em;
+}
+
+.testimonials-section li img {
+  width: 5em;
+  height: 5em;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #006bd6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+label {
+  color: black;
+  display: block;
+  font-size: 1.3em;
+}
+
+.contact-section {
+  margin: 0 auto 0 auto;
+}
+
+.contact-section .contact-left {
+  margin: 0em auto 3em auto;
+}
+
+.contact-section .contact-left h1 {
+  font-size: 2em;
+}
+
+.contact-section .contact-left input, .contact-section .contact-left textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .8em;
+  border-radius: .3em;
+  border: 0.1em solid grey;
+}
+
+.contact-section .contact-left input[type="submit"] {
+  border-radius: 5em;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: .5em 2em;
+  cursor: pointer;
+  width: unset;
+  border: none;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 150px auto;
+        grid-template-columns: 150px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: unset;
+    background: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar nav .primary-nav {
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (100px)[3];
+        grid-template-columns: repeat(3, 100px);
+    grid-column-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar nav .secondary-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (125px)[2];
+        grid-template-columns: repeat(2, 125px);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar nav .go-premiun-cta a {
+    color: var(--primary-color);
+    background-color: white;
+    border: 0.2em solid var(--primary-color);
+    border-radius: 5em;
+    padding: .2em 1em;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+  }
+  .navbar nav .go-premiun-cta a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .navbar nav a {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+  }
+  .hero .container .left-col {
+    padding-bottom: 50px;
+    display: -ms-grid;
+    display: grid;
+    text-align: left;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-grid-rows: 50px 100px 60px;
+        grid-template-rows: 50px 100px 60px;
+  }
+  .testimonials-section li {
+    font-size: 1.3em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
